@@ -1,0 +1,4 @@
+{% macro render_field(field) %}
+{{ field.label(class="sr-only")}}
+{{ field(placeholder=field.id,class="contact-email",autocomplete="off") }}
+{% endmacro %}
